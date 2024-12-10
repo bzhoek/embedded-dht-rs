@@ -6,7 +6,7 @@ edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-embedded-dht-rs = { version = "0.3.2", features = ["dht11", "dht20", "dht22"] }
+embedded-dht-rs = { version = "0.3.2", features = ["dht11"] }
 esp-backtrace = { version = "0.14.0", features = [
     "esp32c3",
     "exception-handler",
