@@ -1,16 +1,14 @@
 [target.xtensa-esp32-none-elf]
 runner = "espflash flash --monitor"
 
-
 [env]
 ESP_LOGLEVEL="INFO"
 
 [build]
 rustflags = [
-  "-C", "link-arg=-nostartfiles",
 ]
 
-target = "xtensa-esp32-none-elf"
+target = "riscv32imc-unknown-none-elf"
 
 [unstable]
 build-std = ["core"]
